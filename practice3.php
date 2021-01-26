@@ -1,23 +1,20 @@
 <?php
 //1
-function times($double){
-    $result = $double*2;
-    return $result;
+function double($num){
+    return $num*2;
 }
-echo times(100);
+echo double(100);
 //()の中に引数を入れることで数値を2倍にして返すことができる。//
-?>
+echo "\n";
 
-<?php
 //2
-function plus($a,$b){;
+function plus($a,$b){
     return $a*$b;
 }
 echo plus(12000,2);
 //()の中に引数を入れることで足した結果を返すことができる。//
-?>
+echo "\n";
 
-<?php
 //3
 $array = array(1,3,5,7,9);
 
@@ -29,9 +26,8 @@ function mul($arr){
     return $result;
 }
 echo mul($array);
-?>
+echo "\n";
 
-<?php
 //4
 function max_array($arr){
 // とりあえず配列の最初の要素を一番大きい値とする
@@ -46,9 +42,8 @@ function max_array($arr){
 return $max_number;
 }
 echo max_array(array(1,3,2,5,6,8,12,41,)); 
-?>
+echo "\n";
 
-<?php
 //5
 //strip_tags...文字列からHTML及びPHPタグを取り除く
 $text = '<p>この場合ｼﾝｸﾞﾙｸｵﾃｰｼｮﾝで囲まれている箇所が出力されるがstrip_tagsによってタグが取り除かれる<p>';
@@ -85,4 +80,5 @@ echo date('l jS \of F Y h:i:s A');
 echo "\n";
 echo "Apr 30th, 1994 is on a " . date("l", mktime(0, 0, 0, 4, 30, 1994));
 echo "\n";
+
 ?>
